@@ -23,6 +23,7 @@ body{
   transition: .5s all;
   font-weight: 500;
   letter-spacing: 2px;
+  cursor: pointer;
   &:hover{
     background-color: $color-base;
     color: $color-white;
