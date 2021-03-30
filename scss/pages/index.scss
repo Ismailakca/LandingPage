@@ -1,5 +1,7 @@
 .Showcase{
   padding-top: 104px;
+  z-index: 99;
+  position: relative;
   .container{
     display: flex;
     justify-content: space-between; //resimle yazıyı iki uca gönderdik
@@ -66,6 +68,7 @@
 .Referance {
   position: relative;
   margin-top: 91px;
+  z-index: 99;
   &__background {
     display: none;
     @include mq('large') {
@@ -103,6 +106,8 @@
 .Features{
   margin-top: 98px;
   text-align: center;
+  z-index: 99;
+  position: relative;
   &__title{
     color: $color-background-two;
     font-weight: 700;
@@ -156,4 +161,12 @@
       }
     }
   }
+}
+.Gradient{
+  position: absolute;
+  left: 0;
+  right: 0;
+  background: linear-gradient(222.26deg, #3B1D60 1.22%, #040D3E 106.28%);
+  height: 1509px;
+  margin-top: -79px;
 }

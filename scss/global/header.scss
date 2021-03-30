@@ -1,6 +1,8 @@
 .Header{
   height: 36px;
   margin-top: 79px;
+  z-index: 99;
+  position: relative;
   .container{
     height: 100%;
     display: flex;
