@@ -170,3 +170,42 @@
   height: 1509px;
   margin-top: -79px;
 }
+.increase{
+  margin-top: 160px;
+  .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    @include mq('tablet'){
+      flex-direction: row;
+      justify-content: space-between;
+    }
+    .increase__content{
+        display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 20px;
+      @include mq('tablet'){
+        align-items: start;
+        justify-content: start;
+      }
+      .increase__title{
+        font-size: 42px;
+        color: $color-background-two;
+        font-weight: 700;
+      }
+      .increase__text{
+        margin-top: 32px;
+        margin-bottom: 43px;
+        font-size: 15px;
+        color: $color-background;
+      }
+      a{
+        padding-top: 14px;
+        padding-bottom: 14px;
+      }
+    }
+  }
+}
