@@ -266,3 +266,25 @@
     }
   }
 }
+.Framework{
+  margin-top: 169px;
+
+  &__title{
+    margin-bottom: 46px;
+  }
+  .container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url("./img/startup_backgrpund.svg");
+    padding-bottom: 353px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+  }
+  &__btn{
+    padding-bottom: 17px;
+    padding-top: 17px;
+  }
+}
