@@ -288,3 +288,66 @@
     padding-top: 17px;
   }
 }
+.Business{
+  margin-top: 169px;
+  .container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    @include mq('tablet'){
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
+  &__content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    @include mq('tablet'){
+      align-items: start;
+    }
+
+  }
+  &__title{
+    font-size: 42px;
+    font-weight: 700;
+    color: $color-background-two;
+    margin-bottom: 32px;
+  }
+  &__text{
+    font-size: 15px;
+    letter-spacing: .5px;
+    color: $color-background;
+    margin-bottom: 46px;
+    text-align: center;
+    @include mq('tablet'){
+     text-align: left;
+    }
+  }
+  a{
+    padding-top: 17px;
+    padding-bottom: 17px;
+  }
+  &__image{
+    margin-top: 46px;
+    display: flex;
+    flex: 1;
+    background: url('./img/world.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    align-items: center;
+    justify-content: center;
+    @include mq('tablet'){
+      margin-top: 0;
+    }
+    figure{
+      @include mq('tablet'){
+        margin-top: -50px;
+      }
+    }
+  }
+}
