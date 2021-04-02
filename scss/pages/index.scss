@@ -61,6 +61,7 @@
     @include mq('large'){
       display: block;
       margin-right: -100px;
+      overflow: hidden;
     }
 
   }
@@ -167,11 +168,13 @@
   left: 0;
   right: 0;
   background: linear-gradient(222.26deg, #3B1D60 1.22%, #040D3E 106.28%);
-  height: 1509px;
+  height: 1609px;
   margin-top: -79px;
 }
 .increase{
   margin-top: 160px;
+  position: relative;
+  z-index: 99;
   .container{
     display: flex;
     flex-direction: column;
@@ -205,6 +208,60 @@
       a{
         padding-top: 14px;
         padding-bottom: 14px;
+      }
+    }
+  }
+}
+.Metrics{
+  margin-top: 46px;
+  &__title{
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  &__text{
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: center;
+    margin-top: 32px;
+    letter-spacing: 0.2px;
+    font-size: 15px;
+    color: $color-background;
+  }
+  .container{
+    margin-top: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    @include mq('tablet'){
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .Metrics__item{
+      width: 291px;
+      height: 118px;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      text-align: center;
+     &:not(:first-child){
+       margin-top: 20px;
+       @include mq('tablet'){
+         margin-top: 0;
+       }
+     }
+      &-title{
+        color: $color-background-two;
+        font-size: 36px;
+        letter-spacing: .33px;
+        font-weight: bold;
+      }
+      &-text{
+        color: $color-background;
+        font-size: 15px;
+        letter-spacing: .2px;
+        margin-top: 16px;
       }
     }
   }
